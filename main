@@ -1,0 +1,24 @@
+meme_dict = {
+    "CRINGE": "Algo excepcionalmente raro o embarazoso.",
+    "LOL": "Una respuesta común a algo gracioso.",
+    "Formula_1": "Es una competición de automovilismo mundial.",
+    "TBT": "Abreviatura de 'Throwback Thursday', un día de la semana para compartir recuerdos antiguos.",
+    "FOMO": "Fear of Missing Out, el miedo a perderse algo importante o divertido.",
+    "YOLO": "You Only Live Once, significa aprovechar las oportunidades de la vida sin preocuparse demasiado.",
+    "MEME": "Una imagen, video o idea que se difunde rápidamente en internet, generalmente de forma humorística.",
+    "VIRAL": "Algo que se propaga rápidamente en internet, ya sea un video, meme o noticia.",
+    "DANK": "Algo de alta calidad o excepcional, a menudo relacionado con memes o contenido humorístico.",
+    "BOT": "Un programa automatizado que simula la interacción humana, a menudo utilizado en redes sociales."
+}
+
+while True:
+    palabra = input("Escribe la palabra que necesites saber su significado (o escribe 'salir' para terminar): ")
+
+    if palabra.lower() == 'salir':
+        print("¡Hasta luego!")  
+        break
+
+    if palabra in meme_dict:
+        print(meme_dict[palabra])
+    else:
+        print("Lo siento, pero no he encontrado la palabra en mi diccionario. Prueba con otra, por favor.")
